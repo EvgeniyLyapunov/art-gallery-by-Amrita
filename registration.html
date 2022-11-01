@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo logo" src="img/logo.svg" alt="logo">
+        <span class="header__company-name">Art Gallery</span>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__link">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="contacts.html" class="header__link">Связаться с нами</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="user.html" class="header__link">Личный кабинет</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="registration.html" class="header__link">Авторизация</a>
+        </li>
+      </ul>
+      <div class="header__contacts-block">
+        <span class="header__tel">Телефон: 11-11-11</span>
+        <button class="header__btn btn">Мы перезвоним</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__title">Авторизация</h1>
+      <div class="hero__subtitle">
+        Совершай покупки индивидуально!
+      </div>
+    </div>
+  </section>
+
+  <section class="auth">
+    <div class="container">
+      <div class="auth__title-inner title-inner">
+        <h2 class="auth__title title">Ваш профиль</h2>
+      </div>
+      <div class="auth__tabs-wrapper">
+        <button class="auth__tab-btn">Регистрация</button>
+        <button class="auth__tab-btn">Вход</button>
+      </div>
+      <div class="auth__tabs-contant">
+        <div class="auth__registration show">
+          <div class="auth__registration-title-inner title-inner">
+            <h3 class="auth__registration-title title">Создайте ваш профиль</h3>
+          </div>
+          <form class="auth__registration-form" action="">
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="text" required name="name" placeholder="Введите ваше имя">
+              <span class="auth__reg-span">Ваше имя:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="text" required name="middleName" placeholder="Введите ваше отчество">
+              <span class="auth__reg-span">Ваше отчество:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="text" required name="lastName" placeholder="Введите вашe фамилию">
+              <span class="auth__reg-span">Ваша фамилия:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="text" required name="login" placeholder="Введите ваш логин">
+              <span class="auth__reg-span">Ваш логин:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="email" required name="email" placeholder="Введите ваш email">
+              <span class="auth__reg-span">Ваш email:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="password" required name="password" placeholder="Введите пароль">
+              <span class="auth__reg-span">Ваш пароль:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input" type="password" required name="confirmPassword" placeholder="Повторите пароль">
+              <span class="auth__reg-span">Повторите пароль:</span>
+            </label>
+            <label class="auth__check-label">
+              <input class="auth__check-input" type="checkbox" name="checkbox">
+              <span class="auth__check-span"></span>
+              <span class="auth__checkbox-text">Согласен на&nbsp;обработку данных</span>
+            </label>
+            <div class="auth__reg-submit-block">
+              <input class="auth__reg-submit" type="submit" value="Регистрация">
+              <input class="auth__reg-reset" type="reset" value="Очистить всё">
+            </div>
+          </form>
+        </div>
+        <div class="auth__registration">
+          <div class="auth__registration-title-inner title-inner">
+            <h3 class="auth__registration-title title">Авторизуйтесь</h3>
+          </div>
+          <form class="auth__registration-form" action="">
+            <label class="auth__reg-label">
+              <input class="auth__reg-input type="text" required name="login" placeholder="Введите ваш логин">
+              <span class="auth__reg-span">Ваш логин:</span>
+            </label>
+            <label class="auth__reg-label">
+              <input class="auth__reg-input type="password" required name="password" placeholder="Введите пароль">
+              <span class="auth__reg-span">Ваш пароль:</span>
+            </label>
+            <div class="auth__reg-submit-block">
+              <input class="auth__reg-submit" type="submit" value="Войти">
+              <input class="auth__reg-reset" type="reset" value="Очистить всё">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo logo" src="img/logo.svg" alt="logo">
+      <div class="footer__form-section">
+        <h2 class="footer__heading">
+          Оставить заявку
+        </h2>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <input class="footer__input" type="text" aria-label="поле ввода фамилии имени отчества" required placeholder="Имя" name="name">
+          <input class="footer__input" type="email" aria-label="поле ввода электронной почты" required placeholder="E-mail" name="email">
+          <div class="footer__submit">
+            <button class="btn footer__btn" type="submit">Подписаться на рассылку</button>
+          </div>
+        </form>
+      </div>
+      <span class="footer__tel">Телефон: 11-11-11</span>
+    </div>
+  </footer>
+  
+  <script src="js/reg.js"></script>
+</body>
+</html>

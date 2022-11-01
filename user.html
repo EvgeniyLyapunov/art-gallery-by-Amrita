@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo logo" src="img/logo.svg" alt="logo">
+        <span class="header__company-name">Art Gallery</span>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__link">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="contacts.html" class="header__link">Связаться с нами</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="user.html" class="header__link">Личный кабинет</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="registration.html" class="header__link">Авторизация</a>
+        </li>
+      </ul>
+      <div class="header__contacts-block">
+        <span class="header__tel">Телефон: 11-11-11</span>
+        <button class="header__btn btn">Мы перезвоним</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__title">Личный кабинет</h1>
+      <div class="hero__subtitle">
+        Управляйте своим профилем и покупками в одном месте
+      </div>
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="container">
+      <div class="profile__title-inner title-inner">
+        <h2 class="profile__title title">Ваш профиль</h2>
+      </div>
+      <div class="profile__wrapper">
+        <div class="profile__avatar-box">
+          <img class="profile__avatar" src="img/user/gigachad.jpg" alt="profil img">
+        </div>
+        <div class="profile__info">
+          <div class="profile__box">
+            <span class="profile__label">nickname:</span>
+            <span class="profile__text">GigaChad</span>
+          </div>
+          <div class="profile__box">
+            <span class="profile__label">email:</span>
+            <span class="profile__text">GigaChad@perfectman.god</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recently">
+    <div class="container">
+      <div class="recently__title-inner title-inner">
+        <h2 class="recently__title title">Вы недавно смотрели</h2>
+      </div>
+      <ul class="recently__list block__list">
+        <li class="block__item">
+          <div class="block__pic">
+            <img src="img/catalog/portrets/pic6.jpg" alt="picture from catalog of art gallery" class="block__img">
+            <span class="block__img-author">Чарльз Кортни Каран</span>
+            <span class="block__img-name">Мальвы и солнечный свет, 1902</span>
+          </div>
+        </li>
+        <li class="block__item">
+          <div class="block__pic">
+            <img src="img/catalog/scenery/pic3.jpg" alt="picture from catalog of art gallery" class="block__img">
+            <span class="block__img-author">Альберт Бирштадт</span>
+            <span class="block__img-name">Осень в Америке, 1871</span>
+          </div>
+        </li>
+        <li class="block__item">
+          <div class="block__pic">
+            <img src="img/catalog/plot/pic5.jpg" alt="picture from catalog of art gallery" class="block__img">
+            <span class="block__img-author">Сезар Филипп</span>
+            <span class="block__img-name">Аллегория весны, 1859-1930</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="action">
+    <div class="container">
+      <div class="action__title-inner title-inner">
+        <h2 class="action__title title">Ваши действия</h2>
+      </div>
+      <div class="action__wrapper">
+        <div class="action__cart-block">
+          <div class="action__cart-pic">
+            <img class="action__cart-img" src="svg/cart.svg" alt="picture of cart">
+          </div>
+          <div class="action__cart-info">Ваша корзина пуста</div>
+          <a class="action__cart-link" href="catalog.html">Перейти в каталог</a>
+        </div>
+        <div class="action__profile-block">
+          <div class="action__profile-info">Для редактирования профиля введите пароль</div>
+          <form class="action__form" action="">
+            <input class="action__form-input" type="password" required placeholder="Ваш пароль:">
+            <input class="action__form-submit" type="submit" value="Отправить">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo logo" src="img/logo.svg" alt="logo">
+      <div class="footer__form-section">
+        <h2 class="footer__heading">
+          Оставить заявку
+        </h2>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <input class="footer__input" type="text" aria-label="поле ввода фамилии имени отчества" required placeholder="Имя" name="name">
+          <input class="footer__input" type="email" aria-label="поле ввода электронной почты" required placeholder="E-mail" name="email">
+          <div class="footer__submit">
+            <button class="btn footer__btn" type="submit">Подписаться на рассылку</button>
+          </div>
+        </form>
+      </div>
+      <span class="footer__tel">Телефон: 11-11-11</span>
+    </div>
+  </footer>
+  
+</body>
+</html>

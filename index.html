@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo logo" src="img/logo.svg" alt="logo">
+        <span class="header__company-name">Art Gallery</span>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__link">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="contacts.html" class="header__link">Связаться с нами</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="user.html" class="header__link">Личный кабинет</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="registration.html" class="header__link">Авторизация</a>
+        </li>
+      </ul>
+      <div class="header__contacts-block">
+        <span class="header__tel">Телефон: 11-11-11</span>
+        <button class="header__btn btn">Мы перезвоним</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">ART Gallery</h1>
+        <div class="hero__descr">
+          Источник нашего вдохновения&nbsp; - всё прекрасное в&nbsp;мире, что делает жизнь ярче!
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__title-inner title-inner">
+          <h2 class="advantage__title title">Наши преимущества</h2>
+        </div>
+        <div class="advantage__wrapper">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="advantage__slide advantage__slide-one"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advantage__slide advantage__slide-two"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="advantage__slide advantage__slide-three"></div>
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <p class="advantage__text">
+            Принимая во внимание показатели успешности, дальнейшее развитие различных форм деятельности выявляет срочную потребность благоприятных перспектив. Лишь интерактивные прототипы, превозмогая сложившуюся непростую экономическую ситуацию, преданы социально-демократической анафеме. Повседневная практика показывает, что базовый вектор развития говорит о возможностях переосмысления внешнеэкономических политик.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__title-inner title-inner">
+          <h2 class="about__title title">О нашей галерее</h2>
+        </div>
+        <div class="about__wrapper">
+          <img class="about__pic" src="img/about1.jpg" alt="picture about our company" >
+          <p class="about__text text-first">Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности говорит о возможностях соответствующих условий активизации. Приятно, граждане, наблюдать, как предприниматели в сети интернет, вне зависимости от их уровня, должны быть объективно рассмотрены соответствующими инстанциями. Господа, постоянный количественный рост и сфера нашей активности предопределяет высокую востребованность дальнейших направлений развития.<br>И нет сомнений, что ключевые особенности структуры проекта ограничены исключительно образом мышления. Следует отметить, что базовый вектор развития позволяет выполнить важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Есть над чем задуматься: сделанные на базе интернет-аналитики выводы указаны как претенденты на роль ключевых факторов.
+          </p>
+        </div>
+        <div class="about__wrapper wrapper-revers">
+          <img class="about__pic" src="img/about2.jpg" alt="" >
+          <p class="about__text text-second">Разнообразный и богатый опыт говорит нам, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки системы массового участия. Сложно сказать, почему сделанные на базе интернет-аналитики выводы неоднозначны и будут функционально разнесены на независимые элементы. Сложно сказать, почему ключевые особенности структуры проекта преданы социально-демократической анафеме. <br><br>Являясь всего лишь частью общей картины, представители современных социальных резервов освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объединены в целые кластеры себе подобных. Лишь непосредственные участники технического прогресса, инициированные исключительно синтетически, подвергнуты целой серии независимых исследований. В рамках спецификации современных стандартов, непосредственные участники технического прогресса лишь добавляют фракционных разногласий и своевременно верифицированы!<br>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo logo" src="img/logo.svg" alt="logo">
+      <div class="footer__form-section">
+        <h2 class="footer__heading">
+          Оставить заявку
+        </h2>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <input class="footer__input" type="text" aria-label="поле ввода фамилии имени отчества" required placeholder="Имя" name="name">
+          <input class="footer__input" type="email" aria-label="поле ввода электронной почты" required placeholder="E-mail" name="email">
+          <div class="footer__submit">
+            <button class="btn footer__btn" type="submit">Подписаться на рассылку</button>
+          </div>
+        </form>
+      </div>
+      <span class="footer__tel">Телефон: 11-11-11</span>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* footer */
+
+.footer {
+  padding-top: 10px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000;
+}
+
+.footer__form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__heading {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color:#fff;
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+}
+
+.footer__input {
+  width: 240px;
+  height: 35px;
+  margin-right: 15px;
+  padding: 0 15px;
+	font-weight: normal;
+	font-size: 16px;
+	color: #cacaca;
+	background-color: #414141;
+	border: 0 solid transparent;
+  border-radius: 5px;
+	cursor: pointer;
+	transition: background-color .3s ease-in-out;
+}
+
+.footer__btn {
+  width: 200px;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #cacaca;
+  border: 0 solid transparent;
+  background-color: #414141;
+  border-radius: 5px;
+  transition: 0.5s color ease-in-out, 0.5s background-color ease-in-out;
+}
+
+.footer__input:hover, .footer__btn:hover {
+	background-color: #666;
+}
+
+.footer__input:focus {
+  outline: none;
+}
+
+.footer__btn:hover {
+	background-color: #666;
+}
+
+.footer__tel {
+  color: #fff;
+}

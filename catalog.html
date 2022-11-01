@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo logo" src="img/logo.svg" alt="logo">
+        <span class="header__company-name">Art Gallery</span>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__link">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="contacts.html" class="header__link">Связаться с нами</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="user.html" class="header__link">Личный кабинет</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="registration.html" class="header__link">Авторизация</a>
+        </li>
+      </ul>
+      <div class="header__contacts-block">
+        <span class="header__tel">Телефон: 11-11-11</span>
+        <button class="header__btn btn">Мы перезвоним</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Art Gallery </h1>
+        <div class="hero__subtitle">Catalog</div>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <div class="container">
+        <ul class="tabs__list-btn">
+          <li class="tabs__item">Пейзажи</li>
+          <li class="tabs__item">Сюжетные</li>
+          <li class="tabs__item">Портреты</li>
+          <li class="tabs__item">Натюрморты</li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__block block show">
+            <ul class="block__list">
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic1.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Brent Cotton</span>
+                  <span class="block__img-name">Autumn in the Bitterroot, 2016</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic2.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Щедрин Сильвестр</span>
+                  <span class="block__img-name">Лунная ночь в Неаполе, 1828</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic3.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Альберт Бирштадт</span>
+                  <span class="block__img-name">Осень в Америке, 1871</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic4.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Иван Вельц</span>
+                  <span class="block__img-name">Туман над рекой, 1916</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic5.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Карл Фредерик Огор</span>
+                  <span class="block__img-name">Вид на побережье Амальфи, 1875</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/scenery/pic6.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Иван Айвазовский</span>
+                  <span class="block__img-name">Вид на крутой скалистый берег и бурное море на закате, 1883</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__block block hide">
+            <ul class="block__list">
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic1.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Эдмунд Блэр Лейтон</span>
+                  <span class="block__img-name">Акколада, 1901</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic2.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Луи Жанмо</span>
+                  <span class="block__img-name">Поэма души 12. Золотая лестница, 1854</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic3.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Чарльз Напьер Кеннеди</span>
+                  <span class="block__img-name">Мастерская художника, 1898</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic4.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Джон Кольер</span>
+                  <span class="block__img-name">Спящая красавица, 1921</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic5.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Сезар Филипп</span>
+                  <span class="block__img-name">Аллегория весны, 1859-1930</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/plot/pic6.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Фридрих Хейзер</span>
+                  <span class="block__img-name">Офелия, 1900</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__block block hide">
+            <ul class="block__list">
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic1.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Софи Жанжамбр Андерсон</span>
+                  <span class="block__img-name">Любовь в дымке, 1823</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic2.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Джон Рассел</span>
+                  <span class="block__img-name">Портрет Винсента Ван Гога, 1886</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic3.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Николай Иванович Фешин</span>
+                  <span class="block__img-name">Дама в лиловом, 1908</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic4.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Беатрис Оффор</span>
+                  <span class="block__img-name">Цирцея, 1911</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic5.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Александр Канабель</span>
+                  <span class="block__img-name">Дездемона, 1871</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/portrets/pic6.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Чарльз Кортни Каран</span>
+                  <span class="block__img-name">Мальвы и солнечный свет, 1902</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__block block hide">
+            <ul class="block__list">
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic1.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Александр Петрович Жибинов</span>
+                  <span class="block__img-name">Натюрморт, 1940</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic2.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Оксана Логвинова</span>
+                  <span class="block__img-name">Натюрморт с цветущей веткой и оригами, 2020</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic3.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Эдвард Мане</span>
+                  <span class="block__img-name">Натюрморт с цветами, 1880</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic4.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Винсент Ван Гог</span>
+                  <span class="block__img-name">Ветка цветущего миндаля, 1888</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic5.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Александр Яковлевич Головин</span>
+                  <span class="block__img-name">Натюрморт. Флоксы, 1911</span>
+                </div>
+              </li>
+              <li class="block__item">
+                <div class="block__pic">
+                  <img src="img/catalog/stillLife/pic6.jpg" alt="picture from catalog of art gallery" class="block__img">
+                  <span class="block__img-author">Ян Давидс де Хем</span>
+                  <span class="block__img-name">Натюрморт с книгами, 1628</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo logo" src="img/logo.svg" alt="logo">
+      <div class="footer__form-section">
+        <h2 class="footer__heading">
+          Оставить заявку
+        </h2>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <input class="footer__input" type="text" aria-label="поле ввода фамилии имени отчества" required placeholder="Имя" name="name">
+          <input class="footer__input" type="email" aria-label="поле ввода электронной почты" required placeholder="E-mail" name="email">
+          <div class="footer__submit">
+            <button class="btn footer__btn" type="submit">Подписаться на рассылку</button>
+          </div>
+        </form>
+      </div>
+      <span class="footer__tel">Телефон: 11-11-11</span>
+    </div>
+  </footer>
+  
+  <script src="js/catalog.js"></script>
+</body>
+</html>

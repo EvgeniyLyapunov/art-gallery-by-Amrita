@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo logo" src="img/logo.svg" alt="logo">
+        <span class="header__company-name">Art Gallery</span>
+      </a>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__link">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="contacts.html" class="header__link">Связаться с нами</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="user.html" class="header__link">Личный кабинет</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="registration.html" class="header__link">Авторизация</a>
+        </li>
+      </ul>
+      <div class="header__contacts-block">
+        <span class="header__tel">Телефон: 11-11-11</span>
+        <button class="header__btn btn">Мы перезвоним</button>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Мы на связи</h1>
+        <div class="hero__subtitle">
+          Работаем для Вас без выходных!
+        </div>
+      </div>
+    </section>
+  
+    <section class="workers">
+      <div class="container workers__container">
+        <div class="workers__title-inner title-inner">
+          <h2 class="workers__title title"> Лучшие из нас ждут Вашего звонка</h2>
+        </div>
+        <ul class="workers__best">
+          <li class="workers__person">
+            <div class="workers__photo">
+              <img src="img/contacts/worker1.jpg" alt="" class="workers__pic">
+            </div>
+            <div class="workers__info">
+              <span class="workers__name">Александр Мацкаускас</span>
+              <span class="workers__position">главный редактор позитивного абстрагирования</span>
+              <span class="workers__rate">9.5 из 10</span>
+            </div>
+          </li>
+          <li class="workers__person">
+            <div class="workers__photo">
+              <img src="img/contacts/worker2.jpg" alt="" class="workers__pic">
+            </div>
+            <div class="workers__info">
+              <span class="workers__name">Ефим Стоцкий</span>
+              <span class="workers__position">арт директор экзистенционального реализма</span>
+              <span class="workers__rate">9.89 из 10</span>
+            </div>
+          </li>
+          <li class="workers__person">
+            <div class="workers__photo">
+              <img src="img/contacts/worker3.jpg" alt="" class="workers__pic">
+            </div>
+            <div class="workers__info">
+              <span class="workers__name">Мирабель Утюжкова</span>
+              <span class="workers__position">творческий сотрудник аппаратного ангажирования</span>
+              <span class="workers__rate">10 из 10</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="contacts">
+      <div class="container contacts__container">
+        <address class="contacts__address">Москва, Мясницкий проезд, д.3с1</address>
+        <div class="contacts__email">artgallery@thebest.com</div>
+        <div class="contacts__phones">8-800-777-11-11</div>
+        <ul class="contacts__social">
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#0">
+              <svg class="contacts__social-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#0">
+              <svg class="contacts__social-pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#0">
+              <svg class="contacts__social-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#0">
+              <svg class="contacts__social-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4620.222711823048!2d37.64242776490733!3d55.76984443490898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1660466453215!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo logo" src="img/logo.svg" alt="logo">
+      <div class="footer__form-section">
+        <h2 class="footer__heading">
+          Оставить заявку
+        </h2>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <input class="footer__input" type="text" aria-label="поле ввода фамилии имени отчества" required placeholder="Имя" name="name">
+          <input class="footer__input" type="email" aria-label="поле ввода электронной почты" required placeholder="E-mail" name="email">
+          <div class="footer__submit">
+            <button class="btn footer__btn" type="submit">Подписаться на рассылку</button>
+          </div>
+        </form>
+      </div>
+      <span class="footer__tel">Телефон: 11-11-11</span>
+    </div>
+  </footer>
+</body>
+</html>
