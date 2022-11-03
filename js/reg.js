@@ -39,4 +39,76 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const arrowUp = document.querySelector(".arrow-up");
+
+  window.addEventListener("scroll", (e) => {
+    if(document.documentElement.scrollTop > 500) {
+      arrowUp.classList.remove("hide");
+      arrowUp.classList.add("show");
+    } else {
+      arrowUp.classList.remove("show");
+      arrowUp.classList.add("hide");
+    }
+  });
+
+  arrowUp.addEventListener("click", (e) => {
+    window.scrollBy(0, -(window.scrollY));
+  });
+
+
+  // Регистрация и вход
+  authPost("#registration-form", "#registration-submit", "server/reg.php", "#checkbox");
+  authPost("#login-form", "#login-submit", "server/login.php");
+
+  function  authPost(formSelector, btnSelector, urlPath, ...rest) {
+    const form = document.querySelector(formSelector),
+          submit = document.querySelector(btnSelector);
+
+    submit.addEventListener("click", async (e) => {
+      e.preventDefault();
+
+      if(rest.length > 0) {
+        const check = document.querySelector(rest[0]);
+        if(!check.checked) {
+          alert("Для регистрации нужно согласие на обработку данных");
+          return;
+        }
+      }
+
+      const formData = new FormData(form);
+      const json = JSON.stringify(Object.fromEntries(formData.entries()));
+
+      if((JSON.parse(json).confirmPass) && (JSON.parse(json).pass != JSON.parse(json).confirmPass)) {
+        alert("Неправильно подтверждён пароль");
+        return;
+      }
+
+      let answer = await postData(urlPath, json);
+      userData(answer, form);
+    });      
+  }
+
+  async function postData(urlPath, json) {
+    let result = await fetch(urlPath, {
+      method: "POST",
+      body: json,
+      headers: { "Accept": "application/json", "Content-Type": "application/json;charset=utf-8" }
+    });
+    return await result.json();
+  }
+
+  function userData(userObj, form) {
+    if(userObj.status == "ok") {
+      localStorage.setItem("id", userObj.id);
+      localStorage.setItem("nickname", userObj.nickname);
+      localStorage.setItem("email", userObj.email);
+
+      form.reset();
+      location.href="index.html";
+    } else {
+      alert(userObj.status);
+      form.reset();
+      return;
+    }
+  }
 });

@@ -24,12 +24,12 @@
 }
 
 .hero__subtitle {
+  width: 100%;
   position: relative;
-  padding-right: 140px;
   margin-bottom: 50px;
-  font-size: 50px;
+  font-size: 25px;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   text-shadow: 2px 2px 10px #363636;
 }
 

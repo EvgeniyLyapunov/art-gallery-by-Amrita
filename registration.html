@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Картинная Галерея</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/registration.css">
 </head>
@@ -59,7 +60,7 @@
           <div class="auth__registration-title-inner title-inner">
             <h3 class="auth__registration-title title">Создайте ваш профиль</h3>
           </div>
-          <form class="auth__registration-form" action="">
+          <form class="auth__registration-form" action="" method="post" id="registration-form">
             <label class="auth__reg-label">
               <input class="auth__reg-input" type="text" required name="name" placeholder="Введите ваше имя">
               <span class="auth__reg-span">Ваше имя:</span>
@@ -81,39 +82,40 @@
               <span class="auth__reg-span">Ваш email:</span>
             </label>
             <label class="auth__reg-label">
-              <input class="auth__reg-input" type="password" required name="password" placeholder="Введите пароль">
+              <input class="auth__reg-input" type="password" required name="pass" placeholder="Введите пароль">
               <span class="auth__reg-span">Ваш пароль:</span>
             </label>
             <label class="auth__reg-label">
-              <input class="auth__reg-input" type="password" required name="confirmPassword" placeholder="Повторите пароль">
+              <input class="auth__reg-input" type="password" required name="confirmPass" placeholder="Повторите пароль">
               <span class="auth__reg-span">Повторите пароль:</span>
             </label>
             <label class="auth__check-label">
-              <input class="auth__check-input" type="checkbox" name="checkbox">
+              <input class="auth__check-input" type="checkbox" name="checkbox" id="checkbox">
               <span class="auth__check-span"></span>
               <span class="auth__checkbox-text">Согласен на&nbsp;обработку данных</span>
             </label>
             <div class="auth__reg-submit-block">
-              <input class="auth__reg-submit" type="submit" value="Регистрация">
+              <input class="auth__reg-submit" type="submit" value="Регистрация" id="registration-submit">
               <input class="auth__reg-reset" type="reset" value="Очистить всё">
             </div>
           </form>
         </div>
+
         <div class="auth__registration">
           <div class="auth__registration-title-inner title-inner">
             <h3 class="auth__registration-title title">Авторизуйтесь</h3>
           </div>
-          <form class="auth__registration-form" action="">
+          <form class="auth__registration-form" action="" method="post" id="login-form">
             <label class="auth__reg-label">
-              <input class="auth__reg-input type="text" required name="login" placeholder="Введите ваш логин">
-              <span class="auth__reg-span">Ваш логин:</span>
+              <input class="auth__reg-input" type="email" required name="email" required  placeholder="Введите ваш email">
+              <span class="auth__reg-span">Ваш email:</span>
             </label>
             <label class="auth__reg-label">
-              <input class="auth__reg-input type="password" required name="password" placeholder="Введите пароль">
+              <input class="auth__reg-input type="password" required name="pass" placeholder="Введите пароль">
               <span class="auth__reg-span">Ваш пароль:</span>
             </label>
             <div class="auth__reg-submit-block">
-              <input class="auth__reg-submit" type="submit" value="Войти">
+              <input class="auth__reg-submit" type="submit" value="Войти" id="login-submit">
               <input class="auth__reg-reset" type="reset" value="Очистить всё">
             </div>
           </form>
@@ -140,6 +142,11 @@
       <span class="footer__tel">Телефон: 11-11-11</span>
     </div>
   </footer>
+
+  <svg class="animate__animated animate__pulse animate__infinite arrow-up hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 10.83V17H11V10.83L8.41 13.41L7 12L12 7L17 12L15.59 13.41L13 10.83Z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20Z" />
+  </svg>
   
   <script src="js/reg.js"></script>
 </body>

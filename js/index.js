@@ -2,6 +2,12 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
+  const userNick = document.querySelector(".hero__user-nick");
+  
+  if(localStorage.getItem("id") && localStorage.getItem("id") > 0) {
+    userNick.textContent = `Здравствуйте, ${localStorage.getItem("nickname")}`;
+  }
+
   const swiper = new Swiper('.swiper', {
 
     speed: 1000,
@@ -21,6 +27,22 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+
+  const arrowUp = document.querySelector(".arrow-up");
+
+  window.addEventListener("scroll", (e) => {
+    if(document.documentElement.scrollTop > 500) {
+      arrowUp.classList.remove("hide");
+      arrowUp.classList.add("show");
+    } else {
+      arrowUp.classList.remove("show");
+      arrowUp.classList.add("hide");
+    }
+  });
+
+  arrowUp.addEventListener("click", (e) => {
+    window.scrollBy(0, -(window.scrollY));
   });
 
 });

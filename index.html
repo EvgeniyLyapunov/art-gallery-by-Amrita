@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Картинная Галерея</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -39,6 +40,7 @@
   <main>
     <section class="hero">
       <div class="container hero__container">
+        <div class="hero__user-nick"></div>
         <h1 class="hero__title">ART Gallery</h1>
         <div class="hero__descr">
           Источник нашего вдохновения&nbsp; - всё прекрасное в&nbsp;мире, что делает жизнь ярче!
@@ -119,6 +121,11 @@
       <span class="footer__tel">Телефон: 11-11-11</span>
     </div>
   </footer>
+
+  <svg class="animate__animated animate__pulse animate__infinite arrow-up hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 10.83V17H11V10.83L8.41 13.41L7 12L12 7L17 12L15.59 13.41L13 10.83Z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20Z" />
+  </svg>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
