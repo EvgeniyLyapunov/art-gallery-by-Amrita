@@ -4,8 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const userNick = document.querySelector(".hero__user-nick");
   
-  if(localStorage.getItem("id") && localStorage.getItem("id") > 0) {
-    userNick.textContent = `Здравствуйте, ${localStorage.getItem("nickname")}`;
+  if(localStorage.getItem("user")) {
+    let user = JSON.parse(localStorage.getItem("user"));
+    userNick.textContent = `Здравствуйте, ${user.nickname}`;
   }
 
   const swiper = new Swiper('.swiper', {

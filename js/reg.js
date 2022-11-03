@@ -99,9 +99,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function userData(userObj, form) {
     if(userObj.status == "ok") {
-      localStorage.setItem("id", userObj.id);
-      localStorage.setItem("nickname", userObj.nickname);
-      localStorage.setItem("email", userObj.email);
+      localStorage.setItem("user", `${JSON.stringify(userObj)}`);
+      // localStorage.setItem("id", userObj.id);
+      // localStorage.setItem("nickname", userObj.nickname);
+      // localStorage.setItem("email", userObj.email);
 
       form.reset();
       location.href="index.html";
