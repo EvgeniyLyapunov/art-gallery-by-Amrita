@@ -55,9 +55,133 @@ window.addEventListener("DOMContentLoaded", () => {
     window.scrollBy(0, -(window.scrollY));
   });
 
+  const validation = new window.JustValidate('#registration-form', {
+    errorFieldCssClass: 'is-invalid',
+    errorFieldStyle: {
+      border: '1px solid #FF5C00',
+    },
+    errorLabelCssClass: 'is-label-invalid',
+    errorLabelStyle: {
+      color: '#FF5C00',
+    },
+    focusInvalidField: true,
+    lockForm: true,
+  });
+
+  validation
+  .addField('#first-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Слишком короткое имя'
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Слишком длинное имя'
+    },
+  ])
+  .addField('#middle-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Слишком короткое отчество'
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Слишком длинное отчество'
+    },
+  ])
+  .addField('#last-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Слишком короткая фамилия'
+    },
+    {
+      rule: 'maxLength',
+      value: 50,
+      errorMessage: 'Слишком длинная фамилия'
+    },
+  ])
+  .addField('#reg-nick', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Слишком короткий ник'
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Слишком длинный ник'
+    },
+  ])
+  .addField('#reg-email', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email имеет неверный формат!',
+    },
+  ])
+  .addField('#reg-password', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      rule: 'minLength',
+      value: 5,
+      errorMessage: 'Слишком короткий пароль'
+    },
+  ])
+  .addField('#reg-repeat-password', [
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле',
+    },
+    {
+      validator: (value, fields) => {
+        if (fields['#reg-password'] && fields['#reg-password'].elem) {
+          const repeatPasswordValue = fields['#reg-password'].elem.value;
+  
+          return value === repeatPasswordValue;
+        }
+  
+        return true;
+      },
+      errorMessage: 'Пароль должен быть тем же',
+    },
+  ])
+  .onSuccess(() => {
+    authPost("#registration-form", "#registration-submit", "server/reg.php", "#checkbox");
+  });
+
+
+
+
 
   // Регистрация и вход
-  authPost("#registration-form", "#registration-submit", "server/reg.php", "#checkbox");
+  //authPost("#registration-form", "#registration-submit", "server/reg.php", "#checkbox");
   authPost("#login-form", "#login-submit", "server/login.php");
 
   function  authPost(formSelector, btnSelector, urlPath, ...rest) {
@@ -100,9 +224,6 @@ window.addEventListener("DOMContentLoaded", () => {
   function userData(userObj, form) {
     if(userObj.status == "ok") {
       localStorage.setItem("user", `${JSON.stringify(userObj)}`);
-      // localStorage.setItem("id", userObj.id);
-      // localStorage.setItem("nickname", userObj.nickname);
-      // localStorage.setItem("email", userObj.email);
 
       form.reset();
       location.href="index.html";
