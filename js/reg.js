@@ -71,6 +71,11 @@ window.addEventListener("DOMContentLoaded", () => {
   validation
   .addField('#first-name', [
     {
+      rule: 'customRegexp',
+      value: /^[a-zа-яё]+$/i,
+      errorMessage: 'Имя должно состоять только из букв',
+    },
+    {
       rule: 'required',
       errorMessage: 'Обязательное поле',
     },
@@ -87,6 +92,11 @@ window.addEventListener("DOMContentLoaded", () => {
   ])
   .addField('#middle-name', [
     {
+      rule: 'customRegexp',
+      value: /^[a-zа-яё]+$/i,
+      errorMessage: 'Отчество может состоять только из букв',
+    },
+    {
       rule: 'required',
       errorMessage: 'Обязательное поле',
     },
@@ -102,6 +112,11 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   ])
   .addField('#last-name', [
+    {
+      rule: 'customRegexp',
+      value: /^[a-zа-яё]+$/i,
+      errorMessage: 'Фамилия может состоять только из букв',
+    },
     {
       rule: 'required',
       errorMessage: 'Обязательное поле',
